@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bodyBackgroundColor: #f4f4f4;
+  --main-fontColor: #fff;
+  --background: #33292a;
+  --backgroundWhereDo: #644b4f;
+  --backgroundImgMiddle: #bebaba;
+  --backgroundWhereDoButton: #efa69d;
+  --backgroundWhereDoButtonHover: #e9877b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.main {
+  width: 70%;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+  background-color: var(--main-fontColor);
+}
+
+/* ---Navigation--- */
+
+.navigation {
+  position: relative;
+  width: 100%;
+  background-color: var(--background);
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  visibility: hidden;
+}
+
+.navigation a {
+  color: var(--main-fontColor);
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 95%;
+}
+
+.navigation img {
+  position: absolute;
+  top: 17.5px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+/* hero section */
+
+.hero-section {
+  position: relative;
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+  height: 120px;
+  width: 140px;
+  text-align: right;
+  font-size: 120%;
+}
+
+.hero-title h1 {
+  color: var(--main-fontColor);
+}
+
+/* about us */
+
+.about-us {
+  margin: 50px 0px 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-us-text p {
+  margin-top: 20px;
+  font-size: 90%;
+}
+
+.about-us-picture {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about-us-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---what we do--- */
+
+.what-we-do {
+  padding: 0 20px 0 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--main-fontColor);
+}
+
+.what-we-do h1 {
+  padding-top: 50px;
+}
+
+.what-we-do p {
+  margin-top: 50px;
+  font-size: 90%;
+}
+
+.icons {
+  width: 100%;
+  background-color: var(--background);
+  padding: 30px 20px;
+}
+
+.litle-icon {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.icons p {
+  font-size: 80%;
+  color: var(--main-fontColor);
+}
+
+/* ---pictures--- */
+
+.pictures-set {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.pictures-set img {
+  width: 100%;
+}
+
+.pictures-set-img-middle {
+  text-align: center;
+  margin-bottom: 4px;
+  padding: 50px 0px 50px 0px;
+  background-color: var(--backgroundImgMiddle);
+}
+
+/* ---where do--- */
+
+.where-do {
+  width: 100%;
+  text-align: left;
+  background-color: var(--backgroundWhereDo);
+  color: var(--main-fontColor);
+  padding: 30px;
+}
+
+.where-do-title h2 {
+  margin-bottom: 50px;
+}
+
+.where-do-text-p {
+  margin-bottom: 25px;
+}
+
+.where-do-text a {
+  display: block;
+  font-size: 70%;
+  width: 100px;
+  margin: 30px 0px;
+  padding: 10px 5px 10px 5px;
+  background-color: var(--backgroundWhereDoButton);
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.where-do-text a:hover {
+  background-color: var(--backgroundWhereDoButtonHover);
+}
+
+/* ---paragraphs three--- */
+
+.paragraphs-three {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.paragraph-upper {
+  width: 100%;
+}
+
+.paragraph-upper p {
+  margin-top: 20px;
+}
+
+.paragraph-bottom {
+  width: 100%;
+}
+
+.paragraph-bottom img {
+  margin-top: 15px;
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* ---pictures four--- */
+
+.pictures-four {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.pictures-four img {
+  width: 100%;
+}
+
+/* ---footer--- */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: var(--background);
+  color: var(--main-fontColor);
+}
+
+.footer a {
+  color: var(--backgroundWhereDoButton);
+}
+
+/* ---media--- */
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation ul {
+    margin: auto;
+    width: 85%;
+  }
+  .navigation ul li {
+    visibility: visible;
+  }
+
+  .navigation img {
+    visibility: hidden;
+  }
+
+  /*---about us---  */
+
+  .about-us {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 15px;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .about-us-text {
+    width: 50%;
+    text-align: left;
+  }
+
+  .about-us-picture {
+    width: 50%;
+    margin-top: 0px;
+  }
+
+  /* ---what we do--- */
+
+  .what-we-do {
+    padding: 0px 65px 0px 65px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
+
+  /* ---pictures--- */
+
+  .pictures-set {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 40px;
+  }
+
+  .pictures-set-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pictures-set-image {
+    max-width: 32%;
+  }
+
+  .pictures-set-img-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    margin-bottom: 0px;
+  }
+
+  /* ---where do--- */
+
+  .where-do {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px 80px 30px 80px;
+  }
+
+  .where-do-title {
+    width: 100%;
+  }
+
+  .where-do-text a {
+    width: 120px;
+    font-size: 95%;
+  }
+
+  /* ---paragraphs three--- */
+
+  .paragraph-upper {
+    margin: auto;
+    margin-top: 30px;
+    width: 40%;
+  }
+  .paragraph-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .paragraph-bottom-boat,
+  .paragraph-bottom-man {
+    width: 40%;
+  }
+
+  /* ---picture four--- */
+
+  .pictures-four {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pictures-four img {
+    width: 50%;
+  }
+}
